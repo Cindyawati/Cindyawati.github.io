@@ -1,0 +1,95 @@
+/* Header */
+
+#headernav {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    height: 3em;
+    line-height: 3em;
+}
+
+    #headernav h1 {
+        position: absolute;
+        left: 1em;
+        top: 0;
+        cursor: default;
+    }
+
+    #headernav h4 {
+        text-align: left;
+        position: relative;
+        margin-top: 11px; 
+        margin-left: 20px;
+    }
+
+    #headernav h1 a {
+        text-decoration: none;
+        font-size: 1.25em;
+    }
+
+    #headernav nav {
+        position: absolute;
+        right: 0.5em;
+        top: 0;
+    }
+
+    #headernav nav ul {
+        margin: 0;
+    }
+
+    #headernav nav ul li {
+        display: inline-block;
+        margin-left: 0.5em;
+        font-size: 0.9em;
+    }
+
+    #headernav nav ul li a {
+
+        display: contents; 
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #headernav {
+            height: 2.5em;
+            line-height: 2.5em;
+        }
+
+            #headernav h1 {
+                text-align: center;
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+
+            #headernav h4 {
+                text-align: center;
+                position: relative;
+                margin-top: 8px; 
+                margin-left: 20px;
+            }
+
+                #headernav h1 a {
+                    font-size: 1em;
+                }
+
+            #headernav nav {
+                display: none;
+            }
+
+    }
+
+body {
+    padding-top: 3em;
+}
+
+    @media screen and (max-width: 736px) {
+
+        body {
+            padding-top: 2.5em;
+        }
+
+    }
